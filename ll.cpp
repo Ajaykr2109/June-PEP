@@ -65,21 +65,47 @@ void printLL(LN *hed)
     }
 }
 
-int  length(LN *head)
-{
-    int count = 0;
-    LN *current = head;
-    while (current != NULL)
-    {
-        count++;
-        current = current->next;
-    }
-    return count;
+// int  length(LN *head)
+// {
+//     int count = 0;
+//     LN *current = head;
+//     while (current != NULL)
+//     {
+//         count++;
+//         current = current->next;
+//     }
+//     return count;
+//}
+
+int length(LN* head)
+{//recursive length
+    if (head == NULL)
+        return 0;
+    else
+        return 1 + length(head->next);
+
 }
+LN reverse(LN* head)
+{//recursive length
+    if (head == NULL)
+        return 0;
+    else
+    {
+        LN* temp = head->next;
+        head->next = NULL;
+        reverse(temp);
+        temp->next = head;
+        return 1;
+    }
+}
+
 
 int main()
 {
     LN *head = makeLL();
+    printLL(head);
+    //cout << "Length of the list is: " << length(head) << endl;
+    reverse(head);
     printLL(head);
     return 0;
 }
