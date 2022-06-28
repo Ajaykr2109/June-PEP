@@ -85,7 +85,7 @@ int length(LN* head)
         return 1 + length(head->next);
 
 }
-LN reverse(LN* head)
+LN *reverse(LN* head)
 {//recursive reverse
     if (head == NULL)
         return 0;
@@ -95,7 +95,7 @@ LN reverse(LN* head)
         head->next = NULL;
         reverse(temp);
         temp->next = head;
-        return 1;
+        return head; //returning the head of the reversed list
     }
 }
 
@@ -103,7 +103,7 @@ LN reverse(LN* head)
 int main()
 {
     LN *head = makeLL();
-    printLL(head);
+   // printLL(head);
     //cout << "Length of the list is: " << length(head) << endl;
     reverse(head);
     printLL(head);

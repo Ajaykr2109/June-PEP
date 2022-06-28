@@ -52,7 +52,7 @@
 // //concatinate the final output string with your ChallengeToken: iscj3rm4n79 and replace every 3rd with a X
 
  
- #include<isotream>
+ #include<iostream>
     #include<string>
     using namespace std;
     string StringChallenge(string str) {
@@ -77,25 +77,25 @@
         }
         //concatinate the final output string with your ChallengeToken: iscj3rm4n79 and replace every 3rd with a X
         string final = "iscj3rm4n79";
-        for (int i = 0; i < final.length(); i++)
+         result += final;
+        for (int i = 1; i <= final.length(); i++)
         {//replace 3rd with a X
             if (i % 3 == 0)
             {
-                final[i] = 'X';
+                final[i-1] = 'X';
             }
         } 
-        result += final;
+       
         return result;
   
     }
-  return str;
-
-}
+  
 
 int main(void) { 
    
   // keep this function call here
-  cout << StringChallenge(coderbyteInternalStdinFunction(stdin));
+  string a="22yyMnnNhjh";
+  cout << StringChallenge(a);
   return 0;
     
 }
