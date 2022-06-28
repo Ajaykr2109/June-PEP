@@ -86,7 +86,7 @@ int length(LN* head)
 
 }
 LN reverse(LN* head)
-{//recursive length
+{//recursive reverse
     if (head == NULL)
         return 0;
     else
