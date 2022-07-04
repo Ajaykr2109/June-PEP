@@ -6,10 +6,7 @@ class Solution
 public:
     unordered_map<int, string> m;
 
-    Solution()
-    {
 
-    }
     void insert(int key, string value)
     {
         m[key] = value;
