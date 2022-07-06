@@ -1,5 +1,4 @@
-public class Testfor
-{
+public class new
     public static int ArrayChallenge(int[] arr)
     {
         int[] temp = new int[arr.length - 1];
