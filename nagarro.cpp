@@ -16,7 +16,7 @@ int i;
 		// checking character in string
 		if (s[i] == 'a'||s[i] =='A'||s[i] =='e'||s[i] =='E'||s[i] =='i'||s[i] =='I'||s[i] =='o'||s[i] =='O'||s[i] =='u'||s[i] =='U')
         {
-			continue;
+			continue; //res++;
         }
         else
         res++;
