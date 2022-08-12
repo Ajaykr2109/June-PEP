@@ -1,0 +1,21 @@
+printf returns amount of charcters printed on screen
+size of is an operator 
+
+
+while(scanf("%d",&n))
+{
+    sum+=n;
+    c++; //count
+}
+printf("sum=%d",sum);
+
+semaforce variable is used to maintain the log table
+cant fetch the address of constructors.
+constructors by default public. if private main has to be a friend of that class.
+
+
+int sum(int float);
+int(* p) (int float)=&sum; 
+
+same class object and pointers cannot be passed in same class constructors because it will generate infinite call to initialise itself.
+
