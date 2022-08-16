@@ -1,5 +1,4 @@
 //stringest password out of linked list in c
-
 struct node
 {
     int data;
@@ -136,7 +135,6 @@ int main()
     }
     return 0;
 }
-
 //
 vector<int>calculateSpan(int price[], int n)
 {
